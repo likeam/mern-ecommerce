@@ -22,7 +22,7 @@ const LoginPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-400">
+        <h2 className="mt-6 text-center text-3xl font-extrabold text-stone-700">
           Create your account
         </h2>
       </motion.div>
@@ -33,7 +33,7 @@ const LoginPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <div className="bg-gray-900 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-stone-900 py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label
@@ -52,7 +52,7 @@ const LoginPage = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className=" block w-full px-3 py-2 pl-10 bg-gray-700 border border-gray-600 
+                  className=" block w-full px-3 py-2 pl-10 bg-stone-700 border border-gray-600 
 									rounded-md shadow-sm
 									 placeholder-gray-400 focus:outline-none focus:ring-gray-500 
 									 focus:border-emerald-500 sm:text-sm"
@@ -78,8 +78,8 @@ const LoginPage = () => {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className=" block w-full px-3 py-2 pl-10 bg-gray-700 border border-gray-600 
-									rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
+                  className=" block w-full px-3 py-2 pl-10 bg-stone-700 border border-stone-600 
+									rounded-md shadow-sm placeholder-stone-400 focus:outline-none focus:ring-stone-500 focus:border-stone-500 sm:text-sm"
                   placeholder="••••••••"
                 />
               </div>
@@ -88,8 +88,8 @@ const LoginPage = () => {
             <button
               type="submit"
               className="w-full flex justify-center cursor-pointer py-2 px-4 border border-transparent 
-							rounded-md shadow-sm text-sm font-medium text-white bg-gray-500
-							 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2
+							rounded-md shadow-sm text-sm font-medium text-white bg-stone-500
+							 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-offset-2
 							  focus:ring-gray-500 transition duration-150 ease-in-out disabled:opacity-50"
             >
               {loading ? (

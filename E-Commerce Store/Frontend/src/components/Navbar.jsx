@@ -9,21 +9,21 @@ const Navbar = () => {
   const { cart } = useCartStore();
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gradient-to-l from-gray-400 to-gray-700  backdrop-blur-md shadow-lg z-40 transition-all duration-300 border-b border-gray-600">
+    <header className="fixed top-0 left-0 z-50 w-full bg-gradient-to-r from-stone-400 to-stone-400">
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-wrap justify-between items-center">
           <Link
             to="/"
-            className="text-2xl font-bold text-gray-400 items-center space-x-2 flex"
+            className="text-2xl font-bold text-stone-600 items-center space-x-2 flex"
           >
-            E-Commerce
+            Khalid Cloths
           </Link>
 
           <div className="flex items-center space-x-4">
             <nav className="flex flex-wrap items-center gap-4">
               <Link
                 to={"/"}
-                className="text-gray-300 hover:text-gray-400 transition duration-300
+                className="text-stone-700 hover:text-stone-800 transition duration-300
 					 ease-in-out"
               >
                 Home
@@ -51,7 +51,7 @@ const Navbar = () => {
               )}
               {isAdmin && (
                 <Link
-                  className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded-md font-medium
+                  className="bg-stone-700 hover:bg-stone-800 text-white px-3 py-1 rounded-md font-medium
 								 transition duration-300 ease-in-out flex items-center"
                   to={"/secret-dashboard"}
                 >
@@ -62,7 +62,7 @@ const Navbar = () => {
 
               {user ? (
                 <button
-                  className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 
+                  className="bg-stone-700 hover:bg-stone-800 text-white py-2 px-4 
 						rounded-md flex items-center transition duration-300 ease-in-out"
                   onClick={logout}
                 >
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <>
                   <Link
                     to={"/signup"}
-                    className="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 
+                    className="bg-stone-700 hover:bg-stone-800 text-white py-2 px-4 
 									rounded-md flex items-center transition duration-300 ease-in-out"
                   >
                     <UserPlus className="mr-2" size={18} />
@@ -81,7 +81,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to={"/login"}
-                    className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 
+                    className="bg-stone-700 hover:bg-stone-800 text-white py-2 px-4 
 									rounded-md flex items-center transition duration-300 ease-in-out"
                   >
                     <LogIn className="mr-2" size={18} />
